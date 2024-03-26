@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <p className="text-h-lg">asd</p>
+      <p className="text-h-lg">Bibo</p>
     </>
   );
 }
