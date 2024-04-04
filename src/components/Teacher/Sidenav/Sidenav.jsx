@@ -44,7 +44,7 @@ const SideNav = ({}) => {
         </div>
         <div className="w-full  rounded-md flex-col items-center flex mt-4">
           <UserIcon className={NAV_ICON_CLASSES} />
-          <p className="text-center  text-white">Erstellen</p>
+          <p className="text-center  text-white">Account</p>
         </div>
       </div>
     </div>
