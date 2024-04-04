@@ -1,12 +1,15 @@
+import CreateHomework from "../../components/Teacher/CreateHomework/CreateHomework";
 import SideNav from "../../components/Teacher/Sidenav/Sidenav";
 
 function DashboardTeacher() {
   return (
     <>
-      <div className="">
+      <div className="fixed">
         <SideNav />
       </div>
-      <p className="text-h-lg">Teacher</p>
+      <div className="ml-28">
+        <CreateHomework />
+      </div>
     </>
   );
 }
