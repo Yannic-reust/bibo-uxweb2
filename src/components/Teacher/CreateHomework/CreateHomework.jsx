@@ -12,11 +12,11 @@ const CreateHomework = ({}) => {
         <p className="text-h-md">Erstellen</p>
         <div className="mt-2 flex">
           <div>
-            <Button text={"Button Text"} />
+            <Button text={"Button Text"} theme="dark" />
           </div>
 
           <div className="ml-2">
-            <Button text={"Button Text"} />
+            <Button text={"Button Text"} theme="dark" />
           </div>
         </div>
 
@@ -31,7 +31,11 @@ const CreateHomework = ({}) => {
 
             <div className="flex items-center">
               <p className="mr-2">Schritt {step + 1}/3</p>
-              <Button text="Weiter" onClick={() => setStep(step + 1)} />
+              <Button
+                text="Weiter"
+                onClick={() => setStep(step + 1)}
+                theme={"dark"}
+              />
             </div>
           </div>
         </div>
