@@ -1,7 +1,15 @@
 import Button from "../../General/Button";
 import Dropdown from "../../General/Dropdown";
+import { useDispatch } from "react-redux";
+const HomeworkStep1 = (save) => {
+  console.log(save);
 
-const HomeworkStep1 = ({}) => {
+  const dispatch = useDispatch();
+
+  const saveData = () => {
+    dispatch(toggleVolume());
+  };
+
   return (
     <>
       <div className="mt-2">

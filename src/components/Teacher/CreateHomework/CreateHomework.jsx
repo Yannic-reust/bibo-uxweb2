@@ -21,8 +21,13 @@ const CreateHomework = ({}) => {
         </div>
 
         <div className="w-full bg-gray/60 mt-2 rounded-md px-4 py-2">
-          {step == 0 && <HomeworkStep1 />}
-          {step == 1 && <HomeworkStep2 />}
+          <div className={step == 0 ? "block" : "hidden"}>
+            <HomeworkStep1 step={step} />
+          </div>
+          <div className={step == 1 ? "block" : "hidden"}>
+            <HomeworkStep2 step={step} />
+          </div>
+
           <div className="flex justify-between mt-12 pb-2">
             {step >= 1 && (
               <Button text="Zurück" onClick={() => setStep(step - 1)} />
