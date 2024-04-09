@@ -30,6 +30,14 @@ const HomeworkStep2 = ({}) => {
           placeholder="you@example.com"
         />
       </div>
+      <div>
+        <button
+          type="button"
+          className={`rounded-md  px-4 py-2 text-sm font-semibold  shadow-sm bg-gray/80 text-white`}
+        >
+          weiter Fragen erstellen
+        </button>
+      </div>
     </>
   );
 };

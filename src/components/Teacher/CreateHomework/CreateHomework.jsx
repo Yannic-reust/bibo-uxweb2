@@ -9,7 +9,7 @@ const CreateHomework = ({}) => {
   return (
     <>
       <div className="container mx-auto md:py-12 py-6 px-8 lg:px-4">
-        <p className="text-h-md">Erstellen</p>
+        <p className="text-h-md my-4">Erstellen</p>
         <div className="mt-2 flex">
           <div>
             <Button text={"Button Text"} theme="dark" />
@@ -25,7 +25,7 @@ const CreateHomework = ({}) => {
           {step == 1 && <HomeworkStep2 />}
           <div className="flex justify-between mt-12 pb-2">
             {step >= 1 && (
-              <Button text="zurück" onClick={() => setStep(step - 1)} />
+              <Button text="Zurück" onClick={() => setStep(step - 1)} />
             )}
             {step == 0 && <Button text="Abbrechen" />}
 

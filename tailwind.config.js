@@ -1,10 +1,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    screens: {
-      tablet: "960px",
-      desktop: "1280px",
-    },
     colors: {
       white: "#FFFFFF",
       black: "#13070C",
