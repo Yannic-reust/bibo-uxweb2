@@ -1,6 +1,7 @@
 import Button from "../../General/Button";
 import HomeworkStep1 from "../../General/Homework/HomeworkStep1";
 import HomeworkStep2 from "../../General/Homework/HomeworkStep2";
+import HomeworkStep3 from "../../General/Homework/HomeworkStep3";
 import { useState } from "react";
 
 const CreateHomework = ({}) => {
@@ -27,6 +28,9 @@ const CreateHomework = ({}) => {
           <div className={step == 1 ? "block" : "hidden"}>
             <HomeworkStep2 step={step} />
           </div>
+          <div className={step == 2 ? "block" : "hidden"}>
+            <HomeworkStep3 step={step} />
+          </div>
 
           <div className="flex justify-between mt-12 pb-2">
             {step >= 1 && (
@@ -36,11 +40,21 @@ const CreateHomework = ({}) => {
 
             <div className="flex items-center">
               <p className="mr-2">Schritt {step + 1}/3</p>
-              <Button
-                text="Weiter"
-                onClick={() => setStep(step + 1)}
-                theme={"dark"}
-              />
+
+              {step < 2 && (
+                <Button
+                  text="Weiter"
+                  onClick={() => setStep(step + 1)}
+                  theme={"dark"}
+                />
+              )}
+              {step == 2 && (
+                <Button
+                  text="Erstellen"
+                  onClick={() => setStep(step + 1)}
+                  theme={"dark"}
+                />
+              )}
             </div>
           </div>
         </div>
