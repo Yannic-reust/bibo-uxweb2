@@ -7,7 +7,7 @@ export const homework = createSlice({
   },
   reducers: {
     setHomeworkPart1: (state, action) => {
-      state.value = action.payload;
+      console.log(action.payload);
     },
     setHomeworkPart2: (state, action) => {
       state.value = action.payload;
@@ -21,6 +21,7 @@ export const homework = createSlice({
   },
 });
 
-export const { setHomework } = homework.actions;
+export const { setHomeworkPart1, setHomeworkPart2, setHomeworkPart3 } =
+  homework.actions;
 
 export default homework.reducer;

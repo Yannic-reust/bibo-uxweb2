@@ -1,4 +1,5 @@
-import { Fragment } from "react";
+// Dropdown.js
+import { Fragment, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
@@ -6,12 +7,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Dropdown({ title, items }) {
+export default function Dropdown({ title, items, onChange, name }) {
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const handleSelect = (item) => {
+    setSelectedItem(item);
+    onChange({ target: { name, value: item } });
+  };
+
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-          {title}
+          {selectedItem || title}
           <ChevronDownIcon
             className="-mr-1 h-5 w-5 text-gray-400"
             aria-hidden="true"
@@ -35,6 +43,7 @@ export default function Dropdown({ title, items }) {
                 {({ active }) => (
                   <a
                     href="#"
+                    onClick={() => handleSelect(item)}
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                       "block px-4 py-2 text-sm "
