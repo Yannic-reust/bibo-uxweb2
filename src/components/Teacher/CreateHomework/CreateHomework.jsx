@@ -11,13 +11,13 @@ const CreateHomework = ({}) => {
     <>
       <div className="container mx-auto md:py-12 py-6 px-8 lg:px-4">
         <p className="text-h-md my-4">Erstellen</p>
-        <div className="mt-2 flex">
+        <div className="my-4 flex">
           <div>
-            <Button text={"Button Text"} theme="dark" />
+            <Button text={"Aufgabe"} theme="dark" />
           </div>
 
           <div className="ml-2">
-            <Button text={"Button Text"} theme="dark" />
+            <Button text={"Dateiablage"} theme="dark" />
           </div>
         </div>
 
@@ -29,7 +29,7 @@ const CreateHomework = ({}) => {
             <HomeworkStep2 step={step} />
           </div>
           <div className={step == 2 ? "block" : "hidden"}>
-            <HomeworkStep3 step={step} />
+            {step > 1 && <HomeworkStep3 step={step} />}
           </div>
 
           <div className="flex justify-between mt-12 pb-2">
