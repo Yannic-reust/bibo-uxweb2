@@ -5,17 +5,17 @@ import { CameraIcon } from "@heroicons/react/24/outline";
 
 const Question = ({
   title,
-  onEmailChange,
+  onQuestionChange,
   onImageNameChange,
   onAnswerChange,
 }) => {
-  const [emailValue, setEmailValue] = useState("");
+  const [questionValue, setQuestionValue] = useState("");
   const [imageName, setImageName] = useState("");
   const [answer, setAnswer] = useState("");
 
-  const handleEmailChange = (e) => {
-    setEmailValue(e.target.value);
-    onEmailChange(e.target.value);
+  const handleQuestionChange = (e) => {
+    setQuestionValue(e.target.value);
+    onQuestionChange(e.target.value);
   };
 
   const handleImageNameChange = (e) => {
@@ -35,11 +35,11 @@ const Question = ({
       </div>
       <div className="mt-2">
         <input
-          type="email"
-          name="email"
-          id="email"
-          value={emailValue}
-          onChange={handleEmailChange}
+          type="question"
+          name="question"
+          id="question"
+          value={questionValue}
+          onChange={handleQuestionChange}
           className="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
         />
       </div>

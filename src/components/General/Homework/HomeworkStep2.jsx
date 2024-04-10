@@ -6,23 +6,23 @@ import { useDispatch } from "react-redux";
 const HomeworkStep2 = ({ step }) => {
   const dispatch = useDispatch();
   const [questions, setQuestions] = useState([
-    { title: 1, email: "", imageName: "", answer: "" },
-    { title: 2, email: "", imageName: "", answer: "" },
+    { title: 1, question: "", imageName: "", answer: "" },
+    { title: 2, question: "", imageName: "", answer: "" },
   ]);
 
   const addQuestion = () => {
     const newQuestion = {
       title: questions.length + 1,
-      email: "",
+      question: "",
       imageName: "",
       answer: "",
     };
     setQuestions((prevQuestions) => [...prevQuestions, newQuestion]);
   };
 
-  const handleEmailChange = (index, value) => {
+  const handleQuestionChange = (index, value) => {
     const updatedQuestions = [...questions];
-    updatedQuestions[index].email = value;
+    updatedQuestions[index].question = value;
     setQuestions(updatedQuestions);
   };
 
@@ -48,10 +48,10 @@ const HomeworkStep2 = ({ step }) => {
         <div key={index}>
           <Question
             title={question.title}
-            emailValue={question.email}
+            questionValue={question.question}
             imageName={question.imageName}
             answer={question.answer}
-            onEmailChange={(value) => handleEmailChange(index, value)}
+            onQuestionChange={(value) => handleQuestionChange(index, value)}
             onImageNameChange={(value) => handleImageNameChange(index, value)}
             onAnswerChange={(value) => handleAnswerChange(index, value)}
           />
