@@ -11,13 +11,13 @@ const HomeworkStep3 = ({ step }) => {
       <div className="mt-2">
         <p className="mb-2 font-medium">Fach</p>
         <p className="px-6 py-2 bg-white text-black w-fit rounded-md">
-          {data.taskType}
+          {data.subject}
         </p>
       </div>
       <div className="mt-2">
         <p className="mb-2 font-medium">Title</p>
         <p className="px-6 py-2 bg-white text-black w-fit rounded-md">
-          {data.subject}
+          {data.title}
         </p>
       </div>
       <div className="mt-2">

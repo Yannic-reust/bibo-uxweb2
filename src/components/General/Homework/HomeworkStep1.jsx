@@ -8,6 +8,7 @@ import { setHomeworkPart1 } from "../../../store/createHomework/createHomeworkSt
 const HomeworkStep1 = ({ step }) => {
   const [formData, setFormData] = useState({
     subject: "",
+    title: "",
     taskType: "",
     title: "",
     deadline: "",
