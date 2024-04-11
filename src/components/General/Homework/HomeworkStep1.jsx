@@ -32,7 +32,13 @@ const HomeworkStep1 = ({ step }) => {
     <>
       <div className="mt-2">
         <p className="mb-2 font-medium">Aus Archiv auswählen</p>
-        <Button text={"Auswählen"} />
+        <button
+          type="button"
+          className={`rounded-button  px-4 py-2 text-sm font-semibold  shadow-sm  bg-white text-black
+               `}
+        >
+          Auswählen
+        </button>
       </div>
 
       <div className="flex">
