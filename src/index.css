@@ -9,4 +9,14 @@
     body {
         @apply font-sonar; /* set default color to white */
     }
+    @font-face {
+        font-family: Euclid Square;
+        font-weight: 400;
+        src: url(/fonts/EuclidSquare-Regular.woff) format("woff");
+    }
+    @font-face {
+        font-family: Euclid Square;
+        font-weight: 600;
+        src: url(/fonts/EuclidSquare-SemiBold.woff) format("woff");
+    }
 }

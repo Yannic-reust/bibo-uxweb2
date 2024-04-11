@@ -4,51 +4,64 @@ export default {
     colors: {
       white: "#FFFFFF",
       black: "#13070C",
-      gray: "#5C5C5C",
-      darkblue: "#1B65A6",
-      accent: "#F9DC5C",
-      green: "#79BE6D",
-      red: "#F43C39",
+      teacherPrimary: "#7B9CD4",
+      teacherSecondary: "#BCCBE4",
+      teacherTertiary: "#EEF5FF",
+      teacherAccent: "#FA7070",
+      studentPrimary: "#FFC000",
+      studentSecondary: "#FFD966",
+      studentTertiary: "#FFF2CC",
     },
     fontFamily: {
-      sonar: ["sonar-sans", "sans-serif"], // main font
-      karmina: ["karmina", "serif"], // title font
+      sonar: ["Euclid Square", "sans-serif"], // main font
     },
     fontSize: {
       "h-lg": [
-        "36px",
-        { lineHeight: "42px", fontWeight: "700", fontFamily: "karmina" },
+        "26px",
+        { lineHeight: "36.4px", fontWeight: "600", fontFamily: "karmina" },
       ], // desktop main title
       "h-md": [
-        "26px",
-        { lineHeight: "32px", fontWeight: "700", fontFamily: "karmina" },
-      ], // desktop sub title
-      "h-sm": [
-        "24px",
-        { lineHeight: "30px", fontWeight: "700", fontFamily: "karmina" },
+        "21px",
+        {
+          lineHeight: "29.4px",
+          fontWeight: "600",
+          fontFamily: "Euclid Square",
+        },
       ], // mobile main title
-      "h-xs": [
-        "20px",
-        { lineHeight: "26px", fontWeight: "700", fontFamily: "karmina" },
+      "h-sm": [
+        "18px",
+        {
+          lineHeight: "25.2px",
+          fontWeight: "600",
+          fontFamily: "Euclid Square",
+        },
       ], // mobile sub title
       "p-lg": [
-        "18px",
-        { lineHeight: "28px", fontWeight: "400", fontFamily: "sonar-sans" },
+        "21px",
+        {
+          lineHeight: "29.4px",
+          fontWeight: "400",
+          fontFamily: "Euclid Square",
+        },
       ], // desktop text
-      "p-sm": [
+      "p-md": [
         "18px",
-        { lineHeight: "28px", fontWeight: "400", fontFamily: "sonar-sans" },
+        {
+          lineHeight: "25.2px",
+          fontWeight: "400",
+          fontFamily: "Euclid Square",
+        },
       ], // mobile text
-      "p-xs": [
-        "12px",
-        { lineHeight: "18px", fontWeight: "400", fontFamily: "sonar-sans" },
-      ], // tiny text
-      label: [
-        "12px",
-        { lineHeight: "16px", fontWeight: "500", fontFamily: "sonar-sans" },
-      ], // labels
+      "p-sm": [
+        "16px",
+        {
+          lineHeight: "16.8px",
+          fontWeight: "400",
+          fontFamily: "Euclid Square",
+        },
+      ], // mobile text
     },
-    extend: { fontFamily: { sans: ["sonar-sans"] } }, // set default font
+    extend: { fontFamily: { sans: ["Euclid Square"] } }, // set default font
   },
   plugins: [],
 };
