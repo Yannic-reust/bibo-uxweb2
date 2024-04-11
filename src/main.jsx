@@ -37,7 +37,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <div className="fixed">
         <SideNav />
       </div>
-      <div className="ml-28">
+      <div className="ml-32">
         <RouterProvider router={router} />
       </div>
     </React.StrictMode>
