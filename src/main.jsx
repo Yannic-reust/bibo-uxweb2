@@ -7,7 +7,7 @@ import DashboardTeacher from "./pages/Teacher/Home/DashboardTeacher.jsx";
 import SubjectsTeacher from "./pages/Teacher/Subjects/Subjects.jsx";
 import ClassListTeacher from "./pages/Teacher/ClassList/ClassList.jsx";
 import HomeworkTeacher from "./pages/Teacher/Homework/Homework.jsx";
-
+import SideNav from "./components/Teacher/Sidenav/Sidenav";
 import DashboardStudent from "./pages/Student/DashboardStudent.jsx";
 import store from "./store";
 import { Provider } from "react-redux";
@@ -34,7 +34,12 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <div className="fixed">
+        <SideNav />
+      </div>
+      <div className="ml-28">
+        <RouterProvider router={router} />
+      </div>
     </React.StrictMode>
   </Provider>
 );

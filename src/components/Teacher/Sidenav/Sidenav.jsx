@@ -6,9 +6,20 @@ import { PlusCircleIcon } from "@heroicons/react/24/outline";
 import { UserIcon } from "@heroicons/react/24/outline";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
-const NAV_ICON_CLASSES = "w-11 h-11 ";
+const url = window.location.href;
 
-const currentRoute = "/teacher/dashboard";
+function cutURL(url) {
+  var startIndex = url.indexOf("/", 7); // Find the first occurrence of '/' after 'http://'
+  if (startIndex !== -1) {
+    return url.substring(startIndex); // Return the substring starting from the first '/'
+  } else {
+    return url; // If '/' is not found, return the original URL
+  }
+}
+
+const currentRoute = cutURL(url);
+
+const NAV_ICON_CLASSES = "w-11 h-11 ";
 
 const navItems = [
   {
@@ -55,13 +66,19 @@ const SideNav = ({}) => {
           <p className="mt-1 text-black text-p-sm">2024 5A</p>
         </div>
         {navItems.map((item, index) => (
-          <a href={item.route} key={index}>
+          <a
+            href={item.route}
+            key={index}
+            className={`${
+              item.route === currentRoute
+                ? "bg-teacherPrimary !text-white"
+                : "text-black"
+            }  w-full rounded-lg `}
+          >
             <div
-              className={`${
-                item.route === currentRoute
-                  ? "bg-teacherPrimary !text-white"
-                  : "text-black"
-              } m-1  rounded-lg flex-col justify-center items-center flex  aspect-square`}
+              className={
+                "w-full  flex-col justify-center items-center flex  aspect-square"
+              }
             >
               {item.icon}
               <p className="text-center  ">{item.name}</p>
