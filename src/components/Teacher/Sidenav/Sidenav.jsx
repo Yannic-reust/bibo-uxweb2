@@ -52,7 +52,7 @@ const SideNav = ({}) => {
       <div className="p-2 flex flex-col items ">
         <div className=" p-2 flex justify-center flex-col items-center pb-8">
           <div className="bg-black/20 rounded-full h-16 w-16" />
-          <p className="mt-1 text-black">2024 5A</p>
+          <p className="mt-1 text-black text-p-sm">2024 5A</p>
         </div>
         {navItems.map((item, index) => (
           <a href={item.route} key={index}>
@@ -79,11 +79,11 @@ const SideNav = ({}) => {
       <div className="absolute bottom-2 w-28">
         <div className="w-full  rounded-md flex-col items-center flex mt-4">
           <EnvelopeIcon className={NAV_ICON_CLASSES} />
-          <p className="text-center  ">Nachrichten</p>
+          <p className="text-center text-p-sm ">Nachrichten</p>
         </div>
         <div className="w-full  rounded-md flex-col items-center flex mt-4">
           <UserIcon className={NAV_ICON_CLASSES} />
-          <p className="text-center  ">Account</p>
+          <p className="text-center  text-p-sm">Account</p>
         </div>
       </div>
     </div>
