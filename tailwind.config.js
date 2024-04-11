@@ -66,6 +66,11 @@ export default {
       boxShadow: {
         main: "0px 4px 52.6px 0px rgba(0, 0, 0, 0.25)",
       },
+      borderRadius: {
+        none: "0",
+        main: "15px",
+        button: "8px",
+      },
     }, // set default font
   },
   plugins: [],
