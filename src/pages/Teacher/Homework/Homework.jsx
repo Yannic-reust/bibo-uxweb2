@@ -8,7 +8,7 @@ function Homework() {
   const [step, setStep] = useState(0);
   return (
     <>
-      <div className=" mx-auto md:py-12 py-6 px-8 lg:px-4">
+      <div className=" mx-auto md:py-12 py-6 px-12 lg:px-8">
         <p className="text-h-md my-4">Erstellen</p>
         <div className="my-4 flex">
           <div>
