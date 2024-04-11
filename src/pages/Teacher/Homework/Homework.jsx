@@ -1,7 +1,9 @@
+import CreateHomework from "../../../components/Teacher/CreateHomework/CreateHomework";
+
 function Homework() {
   return (
     <>
-      <p>Homework</p>
+      <CreateHomework />
     </>
   );
 }
