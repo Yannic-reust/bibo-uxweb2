@@ -21,7 +21,7 @@ const CreateHomework = ({}) => {
           </div>
         </div>
 
-        <div className="w-full bg-gray/60 mt-2  rounded-md px-6 py-4">
+        <div className="w-full bg-gray/60 mt-2  rounded-main px-6 py-4">
           <div className={step == 0 ? "block" : "hidden"}>
             <HomeworkStep1 step={step} />
           </div>

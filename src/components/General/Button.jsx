@@ -4,7 +4,7 @@ const Button = ({ text, onClick, theme }) => {
       <button
         onClick={onClick}
         type="button"
-        className={`rounded-md  px-4 py-2 text-sm font-semibold  shadow-sm   ${
+        className={`rounded-button  px-4 py-2 text-sm font-semibold  shadow-sm   ${
           theme == "dark" ? "bg-gray/80 text-white" : "bg-white text-black"
         }`}
       >

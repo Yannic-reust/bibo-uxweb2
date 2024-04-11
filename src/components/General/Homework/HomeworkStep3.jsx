@@ -10,19 +10,19 @@ const HomeworkStep3 = ({ step }) => {
     <>
       <div className="mt-2">
         <p className="mb-2 font-medium">Fach</p>
-        <p className="px-6 py-2 bg-white text-black w-fit rounded-md">
+        <p className="px-6 py-2 bg-white text-black w-fit rounded-main">
           {data.subject}
         </p>
       </div>
       <div className="mt-2">
         <p className="mb-2 font-medium">Title</p>
-        <p className="px-6 py-2 bg-white text-black w-fit rounded-md">
+        <p className="px-6 py-2 bg-white text-black w-fit rounded-main">
           {data.title}
         </p>
       </div>
       <div className="mt-2">
         <p className="mb-2 font-medium">Frist</p>
-        <div className="pl-4 pr-4 py-2 bg-white text-black w-fit rounded-md flex">
+        <div className="pl-4 pr-4 py-2 bg-white text-black w-fit rounded-main flex">
           <CalendarIcon className={"w-6 mr-2"} />
           {data.deadline}
         </div>

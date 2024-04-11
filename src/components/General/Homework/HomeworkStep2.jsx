@@ -61,7 +61,7 @@ const HomeworkStep2 = ({ step }) => {
       <div className="mt-4">
         <button
           type="button"
-          className={`rounded-md  px-4 py-2 text-sm font-semibold  shadow-sm bg-gray/80 text-white`}
+          className={`rounded-button  px-4 py-2 text-sm font-semibold  shadow-sm bg-gray/80 text-white`}
           onClick={() => addQuestion()}
         >
           weitere Frage erstellen
