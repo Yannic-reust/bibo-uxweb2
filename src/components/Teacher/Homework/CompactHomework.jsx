@@ -3,7 +3,7 @@ function CompactHomework() {
   const NAV_ICON_CLASSES = "w-14 h-14 ";
   return (
     <>
-      <div className="bg-teacherTertiary p-4 rounded-main mt-6">
+      <div className="bg-teacherTertiary p-4 rounded-main ">
         <div className="flex justify-between">
           <div>
             <p className="text-h-sm">Multiplikation Kapitel 4 - Textaufgaben</p>
