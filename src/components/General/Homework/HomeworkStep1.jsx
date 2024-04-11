@@ -10,7 +10,6 @@ const HomeworkStep1 = ({ step }) => {
     subject: "",
     title: "",
     taskType: "",
-    title: "",
     deadline: "",
   });
 
