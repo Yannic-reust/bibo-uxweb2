@@ -61,7 +61,12 @@ export default {
         },
       ], // mobile text
     },
-    extend: { fontFamily: { sans: ["Euclid Square"] } }, // set default font
+    extend: {
+      fontFamily: { sans: ["Euclid Square"] },
+      boxShadow: {
+        main: "0px 4px 52.6px 0px rgba(0, 0, 0, 0.25)",
+      },
+    }, // set default font
   },
   plugins: [],
 };
