@@ -19,7 +19,7 @@ function cutURL(url) {
 
 const currentRoute = cutURL(url);
 
-const NAV_ICON_CLASSES = "w-11 h-11 ";
+const NAV_ICON_CLASSES = "w-14 h-14 ";
 
 const navItems = [
   {
@@ -59,7 +59,7 @@ const bottomNavItems = [
 
 const SideNav = ({}) => {
   return (
-    <div className="bg-white shadow-main w-28 h-screen relative">
+    <div className="bg-white shadow-main w-32 h-screen relative">
       <div className="p-2 flex flex-col items ">
         <div className=" p-2 flex justify-center flex-col items-center pb-8">
           <div className="bg-black/20 rounded-full h-16 w-16" />
@@ -73,11 +73,11 @@ const SideNav = ({}) => {
               item.route === currentRoute
                 ? "bg-teacherPrimary !text-white"
                 : "text-black"
-            }  w-full rounded-lg `}
+            }  m-1 rounded-main `}
           >
             <div
               className={
-                "w-full  flex-col justify-center items-center flex  aspect-square"
+                "w-full  flex-col justify-center items-center flex  aspect-square "
               }
             >
               {item.icon}
@@ -86,19 +86,19 @@ const SideNav = ({}) => {
           </a>
         ))}
 
-        <div className="w-full  rounded-md flex-col items-center flex mt-4">
+        <div className="w-full  rounded-main flex-col items-center flex mt-4">
           <PlusCircleIcon
             className={`${NAV_ICON_CLASSES} text-teacherAccent`}
           />
           <p className="text-center text-teacherAccent ">Erstellen</p>
         </div>
       </div>
-      <div className="absolute bottom-2 w-28">
-        <div className="w-full  rounded-md flex-col items-center flex mt-4">
+      <div className="absolute bottom-20 w-full ">
+        <div className="w-full  rounded-main flex-col items-center flex mt-4">
           <EnvelopeIcon className={NAV_ICON_CLASSES} />
           <p className="text-center text-p-sm ">Nachrichten</p>
         </div>
-        <div className="w-full  rounded-md flex-col items-center flex mt-4">
+        <div className="w-full  rounded-main flex-col items-center flex mt-6">
           <UserIcon className={NAV_ICON_CLASSES} />
           <p className="text-center  text-p-sm">Account</p>
         </div>
