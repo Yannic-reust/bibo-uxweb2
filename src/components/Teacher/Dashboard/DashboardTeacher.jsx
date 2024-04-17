@@ -1,4 +1,3 @@
-import Button from "../../../components/General/Button";
 import CreateNews from "../../../components/Teacher/Actions/CreateNews";
 import NewMessage from "../../../components/Teacher/Actions/NewMessage";
 import CompactHomework from "../../../components/Teacher/Homework/CompactHomework";

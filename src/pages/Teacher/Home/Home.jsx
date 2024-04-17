@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ClassSelection from "../../../components/Teacher/Dashboard/ClassSelection";
-import DasboardTeacher from ".//DashboardTeacher";
+import DasboardTeacher from "../../../components/Teacher/Dashboard/DashboardTeacher";
 function Home() {
   const [step, setStep] = useState(0);
 
