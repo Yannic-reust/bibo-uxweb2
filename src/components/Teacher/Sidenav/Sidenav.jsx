@@ -24,7 +24,7 @@ const NAV_ICON_CLASSES = "w-14 h-14 ";
 const navItems = [
   {
     name: "Home",
-    route: "/teacher/dashboard",
+    route: "/teacher",
     icon: <HomeIcon className={NAV_ICON_CLASSES} />,
   },
   {
@@ -85,13 +85,6 @@ const SideNav = ({}) => {
             </div>
           </a>
         ))}
-
-        <div className="w-full  rounded-main flex-col items-center flex mt-4">
-          <PlusCircleIcon
-            className={`${NAV_ICON_CLASSES} text-teacherAccent`}
-          />
-          <p className="text-center text-teacherAccent ">Erstellen</p>
-        </div>
       </div>
       <div className="absolute bottom-20 w-full ">
         <div className="w-full  rounded-main flex-col items-center flex mt-4">

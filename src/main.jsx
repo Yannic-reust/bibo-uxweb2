@@ -3,20 +3,21 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import DashboardTeacher from "./pages/Teacher/Home/DashboardTeacher.jsx";
+import HomeTeacher from "./pages/Teacher/Home/Home.jsx";
 import SubjectsTeacher from "./pages/Teacher/Subjects/Subjects.jsx";
 import ClassListTeacher from "./pages/Teacher/ClassList/ClassList.jsx";
 import HomeworkTeacher from "./pages/Teacher/Homework/Homework.jsx";
 import SideNav from "./components/Teacher/Sidenav/Sidenav";
-import DashboardStudent from "./pages/Student/DashboardStudent.jsx";
+
 import store from "./store";
 import { Provider } from "react-redux";
 
 const router = createBrowserRouter([
   {
-    path: "/teacher/dashboard",
-    element: <DashboardTeacher />,
+    path: "/teacher",
+    element: <HomeTeacher />,
   },
+
   {
     path: "/teacher/homework",
     element: <HomeworkTeacher />,
