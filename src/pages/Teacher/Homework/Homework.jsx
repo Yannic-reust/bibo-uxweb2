@@ -13,7 +13,7 @@ function Homework() {
             Hausaufgabe erstellen
           </button>
         </div>
-        <div className="w-full  bg-teacherSecondary rounded-main">
+        <div className="w-full  bg-teacherSecondary rounded-main mt-8 ">
           <div className="p-8">
             <RegularHomework />
           </div>
