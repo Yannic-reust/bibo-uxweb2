@@ -1,4 +1,3 @@
-import CreateHomework from "../../../components/Teacher/Homework/CreateHomework";
 import RegularHomework from "../../../components/Teacher/Homework/RegularHomework";
 function Homework() {
   return (
@@ -15,10 +14,17 @@ function Homework() {
         </div>
         <div className="w-full  bg-teacherSecondary rounded-main mt-8 ">
           <div className="p-8">
-            <RegularHomework />
+            <div className="mt-4">
+              <RegularHomework />
+            </div>
+            <div className="mt-4">
+              <RegularHomework />
+            </div>
+            <div className="mt-4">
+              <RegularHomework />
+            </div>
           </div>
         </div>
-        {/* <CreateHomework /> */}
       </div>
     </>
   );

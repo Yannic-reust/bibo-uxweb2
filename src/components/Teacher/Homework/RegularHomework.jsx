@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HomeworkStatusbar from "./HomeworkStatusbar";
+import HomeworkDuration from "./HomeworkDuration";
 
 function RegularHomework() {
   const [open, toggleOpen] = useState(false);
@@ -34,77 +35,60 @@ function RegularHomework() {
             </div>
             {open && (
               <>
-                <div className="grid grid-cols-3 mt-12 mb-12">
+                <div className="grid grid-cols-3 mt-12 mb-8">
                   <div>
                     <HomeworkStatusbar
-                      text={"Aufgaben"}
+                      title={"Aufgaben"}
+                      text={"13/20 Abgegeben"}
                       status={"50%"}
                       icon={
                         <img
-                          src="/assets/icons/chevron-right.svg"
+                          src="/assets/icons/user-check.svg"
                           alt="icon"
-                          className={`w-4 h-4 `}
+                          className={`w-5 h-5 `}
                         />
                       }
                     />
                   </div>
                   <div>
-                    <p>Aufgaben</p>
-                    <div className="flex">
-                      <img
-                        src="/assets/icons/chevron-right.svg"
-                        alt="icon"
-                        className={`w-4 h-4 `}
-                      />
-                      <div
-                        className="h-2 rounded-full bg-black"
-                        style={{ width: "50%" }}
-                      />
-                    </div>
+                    <HomeworkStatusbar
+                      title={"Fehlerquote"}
+                      text={"80%"}
+                      status={"80%"}
+                      icon={
+                        <img
+                          src="/assets/icons/frown.svg"
+                          alt="icon"
+                          className={`w-5 h-5 `}
+                        />
+                      }
+                    />
                   </div>
                   <div>
-                    <p>Aufgaben</p>
-                    <div className="flex">
-                      <img
-                        src="/assets/icons/chevron-right.svg"
-                        alt="icon"
-                        className={`w-4 h-4 `}
-                      />
-                      <div
-                        className="h-2 rounded-full bg-black"
-                        style={{ width: "50%" }}
-                      />
-                    </div>
+                    <HomeworkDuration
+                      title={"Bearbeitungszeit"}
+                      text={"40min"}
+                      icon={
+                        <img
+                          src="/assets/icons/calendar-clock.svg"
+                          alt="icon"
+                          className={`w-5 h-5 `}
+                        />
+                      }
+                    />
                   </div>
                 </div>
-                <button
-                  type="button"
-                  className={`rounded-button  px-2 py-2 text-sm font-semibold h-fit shadow-sm text-white  bg-teacherDarkBlue  `}
-                >
-                  Öffnen
-                </button>
+                <div className="flex justify-end">
+                  <button
+                    type="button"
+                    className={`rounded-button  px-4 py-2 text-sm h-fit shadow-sm text-white  bg-teacherDarkBlue  `}
+                  >
+                    Öffnen
+                  </button>
+                </div>
               </>
             )}
           </div>
-
-          {/* <div className="flex justify-between mt-6">
-          <div className="flex w-full">
-            <img
-              src="/assets/icons/file-check.svg"
-              alt="icon"
-              className="w-7 h-7 mr-2"
-            />
-            <div className="w-1/4">
-              <div className="overflow-hidden  rounded-full bg-teacherPrimary">
-                <div
-                  className="h-2 rounded-full bg-black"
-                  style={{ width: "50%" }}
-                />
-              </div>
-              <p>10/20</p>
-            </div>
-          </div>
-        </div> */}
         </div>
       </div>
     </>

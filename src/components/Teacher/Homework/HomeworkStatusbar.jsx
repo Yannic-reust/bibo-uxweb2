@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 
-function HomeworkStatusbar({ status, icon, text }) {
-  const [open, toggleOpen] = useState(false);
-
+function HomeworkStatusbar({ status, icon, title, text }) {
   return (
     <>
-      <p>{text}</p>
-      <div className="flex">
+      <p>{title}</p>
+      <div className="flex mt-2">
         {icon}
-        <div className="overflow-hidden w-4/6 h-2 rounded-full bg-teacherPrimary">
-          <div
-            className="h-2 rounded-full bg-black"
-            style={{ width: status }}
-          />
+
+        <div className="ml-2  w-4/6">
+          <div className="overflow-hidden mt-1.5 w-full h-2 rounded-full bg-teacherPrimary">
+            <div
+              className="h-2 rounded-full bg-black"
+              style={{ width: status }}
+            />
+          </div>
+          <p className="mt-2 text-p-sm">{text}</p>
         </div>
       </div>
     </>
