@@ -8,6 +8,7 @@ export default {
       teacherSecondary: "#BCCBE4",
       teacherTertiary: "#EEF5FF",
       teacherAccent: "#FA7070",
+      teacherDarkBlue: "#6787BE",
       studentPrimary: "#FFC000",
       studentSecondary: "#FFD966",
       studentTertiary: "#FFF2CC",
@@ -16,6 +17,10 @@ export default {
       sonar: ["Euclid Square", "sans-serif"], // main font
     },
     fontSize: {
+      "h-xl": [
+        "42px",
+        { lineHeight: "36.4px", fontWeight: "600", fontFamily: "karmina" },
+      ], // desktop main title
       "h-lg": [
         "26px",
         { lineHeight: "36.4px", fontWeight: "600", fontFamily: "karmina" },
