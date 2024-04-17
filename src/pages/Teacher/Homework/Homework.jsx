@@ -25,6 +25,37 @@ function Homework() {
             </div>
           </div>
         </div>
+        <div>
+          <div className="flex justify-between mt-8">
+            <p className="text-h-lg my-4">Abgeschlossene Hausaufgaben</p>
+          </div>
+          <form class="">
+            <div class="relative">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <img
+                  src="/assets/icons/search.svg"
+                  alt="search"
+                  className="w-4 h-4"
+                />
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                class="block w-1/3 p-1 ps-8 text-sm  border-2 border-black rounded-lg "
+                placeholder="Suchen"
+                required
+              />
+            </div>
+          </form>
+
+          <div className="w-full  bg-teacherSecondary rounded-main mt-4 ">
+            <div className="p-8">
+              <p className="text-center text-white text-p-lg">
+                Keine abgeschlossene Hausaufgaben
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
