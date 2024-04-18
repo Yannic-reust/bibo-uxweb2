@@ -1,4 +1,3 @@
-import { HomeIcon } from "@heroicons/react/24/outline";
 import { PencilSquareIcon } from "@heroicons/react/24/outline";
 import { FolderIcon } from "@heroicons/react/24/outline";
 import { UserGroupIcon } from "@heroicons/react/24/outline";
@@ -6,41 +5,46 @@ import { PlusCircleIcon } from "@heroicons/react/24/outline";
 import { UserIcon } from "@heroicons/react/24/outline";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
+import HomeSVG from "../../../assets/icons/home.svg?react";
+import FileEditSVG from "../../../assets/icons/file-edit.svg?react";
+import FolderClosedSVG from "../../../assets/icons/folder-closed.svg?react";
+import Users2SVG from "../../../assets/icons/users-2.svg?react";
+
 const url = window.location.href;
 
 function cutURL(url) {
-  var startIndex = url.indexOf("/", 7); // Find the first occurrence of '/' after 'http://'
+  var startIndex = url.indexOf("/", 7);
   if (startIndex !== -1) {
-    return url.substring(startIndex); // Return the substring starting from the first '/'
+    return url.substring(startIndex);
   } else {
-    return url; // If '/' is not found, return the original URL
+    return url;
   }
 }
 
 const currentRoute = cutURL(url);
 
-const NAV_ICON_CLASSES = "w-14 h-14 ";
+const NAV_ICON_CLASSES = "size-14  ";
 
 const navItems = [
   {
     name: "Home",
     route: "/teacher",
-    icon: <HomeIcon className={NAV_ICON_CLASSES} />,
+    icon: <HomeSVG className={NAV_ICON_CLASSES} />,
   },
   {
     name: "Aufgaben",
     route: "/teacher/homework",
-    icon: <PencilSquareIcon className={NAV_ICON_CLASSES} />,
+    icon: <FileEditSVG className={NAV_ICON_CLASSES} />,
   },
   {
     name: "Fächer",
     route: "/teacher/subjects",
-    icon: <FolderIcon className={NAV_ICON_CLASSES} />,
+    icon: <FolderClosedSVG className={NAV_ICON_CLASSES} />,
   },
   {
     name: "Klassenliste",
     route: "/teacher/classList",
-    icon: <UserGroupIcon className={NAV_ICON_CLASSES} />,
+    icon: <Users2SVG className={NAV_ICON_CLASSES} />,
   },
 ];
 
@@ -71,8 +75,8 @@ const SideNav = ({}) => {
             key={index}
             className={`${
               item.route === currentRoute
-                ? "bg-teacherPrimary !text-white"
-                : "text-black"
+                ? "bg-teacherPrimary !text-white !stroke-white"
+                : "text-black stroke-black"
             }  m-1 rounded-main `}
           >
             <div
@@ -80,7 +84,14 @@ const SideNav = ({}) => {
                 "w-full  flex-col justify-center items-center flex  aspect-square "
               }
             >
-              {item.icon}
+              <div
+                className={`${
+                  item.route === currentRoute ? "stroke-white" : "stroke-black"
+                }  flex items-center w-14`}
+              >
+                {item.icon}
+              </div>
+
               <p className="text-center  ">{item.name}</p>
             </div>
           </a>
