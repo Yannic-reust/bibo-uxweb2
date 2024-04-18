@@ -7,6 +7,7 @@ import PlusSVG from "../../../assets/icons/plus.svg?react";
 import CrownSVG from "../../../assets/icons/crown.svg?react";
 import ArrowRightSVG from "../../../assets/icons/arrow-right.svg?react";
 
+import speakBubble from "../../../assets/images/speak_bubble.png";
 function Home() {
   return (
     <>
@@ -36,7 +37,21 @@ function Home() {
             </div>
 
             <div className=" rounded-student space-y-8">
-              <div className="">Hoi Mani</div>
+              <div className="relative  mt-16 px-12 pb-8">
+                <div
+                  style={{ backgroundImage: `url(${speakBubble})` }}
+                  className="bg-cover w-4/5  bg-no-repeat aspect-[3/1] flex justify-center items-center "
+                >
+                  <p className="text-white text-h-xl z-10 relative text-center mb-10">
+                    Hoi Manni
+                  </p>
+                </div>
+                <div className="flex justify-end -mt-16">
+                  <div className="bg-studentSecondary px-12 py-4 rounded-full w-fit">
+                    <p className="text-white text-p-lg">Super-Organisator</p>
+                  </div>
+                </div>
+              </div>
               <div className="bg-white p-8  rounded-student flex items-center flex-col">
                 <div className="flex">
                   <CrownSVG className={`w-14 h-14 mx-2`} />
