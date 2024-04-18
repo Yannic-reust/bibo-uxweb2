@@ -53,11 +53,14 @@ function Home() {
                 </div>
               </div>
               <div className="bg-white p-8  rounded-student flex items-center flex-col">
-                <div className="flex w-full">
-                  <div className="h-1 w-full bg-black dark:bg-neutral-600">
-                    <div className="h-1 bg-white" style={{ width: "45%" }} />
+                <div className="flex w-full items-center">
+                  <div className="h-3 w-full bg-studentSecondary">
                     <div
-                      className="w-4 h-4 bg-teacherPrimary rounded-full -mt-2.5"
+                      className="h-3 rounded-full bg-studentPrimary"
+                      style={{ width: "45%" }}
+                    />
+                    <div
+                      className="w-7 h-7 bg-white border-2 border-studentPrimary rounded-full -mt-5"
                       style={{ marginLeft: "45%" }}
                     />
                   </div>
@@ -65,7 +68,7 @@ function Home() {
                 </div>
                 <p>2 / 9 Hausaufgaben sind erledigt!</p>
                 <a
-                  className={`rounded-button mt-2 px-2 py-2 text-sm font-semibold h-fit shadow-sm text-white w-fit  bg-studentPrimary flex  `}
+                  className={`rounded-button mt-6 px-2 py-2 text-sm font-semibold h-fit shadow-sm text-white w-fit  bg-studentPrimary flex  `}
                 >
                   <span>Zu den Hausaufgaben</span>
                   <ArrowRightSVG className={`w-6 h-6 ml-2`} />
