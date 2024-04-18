@@ -1,21 +1,17 @@
 import ButtonArrow from "./ButtonArrow";
+import MailWarningSVG from "../../../assets/icons/mail-warning.svg?react";
 
 function NewMessage() {
-  const BOX_CLASSES = "bg-teacherSecondary p-4 rounded-main";
-  const NAV_ICON_CLASSES = "w-14 h-14 ";
-
   return (
     <>
       <div className="bg-teacherTertiary rounded-main flex items-center justify-between min-h-14">
         <div className="flex">
-          <img
-            src="/assets/icons/mail-warning.svg"
-            alt="icon"
-            className="w-6 h-6 ml-4"
-          />
+          <MailWarningSVG className="w-6 h-6 ml-4" />
           <p className="text-h-md ml-4">
             <span className="mr-2">Du hast</span>
-            <span className="text-teacherAccent">1 ungelesene Nachricht</span>
+            <span className="text-teacherAccent">
+              1 ungelesene Absenzmeldung
+            </span>
           </p>
         </div>
 

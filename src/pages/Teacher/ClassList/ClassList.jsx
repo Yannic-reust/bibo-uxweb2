@@ -1,4 +1,5 @@
 import Student from "../../../components/Teacher/ClassListe/Student";
+import SearchSVG from "../../../assets/icons/search.svg?react";
 
 function ClassList() {
   return (
@@ -7,19 +8,15 @@ function ClassList() {
         <div className="flex justify-between">
           <p className="text-h-xl my-4">Klassenliste 5A Emmenbrücke</p>
         </div>
-        <form class="">
-          <div class="relative">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <img
-                src="/assets/icons/search.svg"
-                alt="search"
-                className="w-4 h-4"
-              />
+        <form>
+          <div className="relative">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <SearchSVG className="w-4 h-4" />
             </div>
             <input
               type="search"
               id="default-search"
-              class="block w-1/2 p-1 ps-8 text-sm  border-2 border-black rounded-lg "
+              className="block w-1/2 p-1 ps-8 text-sm  border-2 border-black rounded-lg "
               placeholder="Suchen"
               required
             />

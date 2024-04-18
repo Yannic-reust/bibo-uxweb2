@@ -2,6 +2,8 @@ import CreateNews from "../../../components/Teacher/Actions/CreateNews";
 import NewMessage from "../../../components/Teacher/Actions/NewMessage";
 import CompactHomework from "../../../components/Teacher/Homework/CompactHomework";
 import Folder from "../../../components/Teacher/Subjects/Folder";
+import CalenderSVG from "../../../assets/icons/calendar.svg?react";
+import ChevronRightSVG from "../../../assets/icons/chevron-right.svg?react";
 
 function DashboardTeacher() {
   const BOX_CLASSES = "bg-teacherSecondary p-4 rounded-main";
@@ -38,7 +40,7 @@ function DashboardTeacher() {
               <p className="text-h-md">Meist Benutze Fächer</p>
               <button
                 type="button"
-                class="rounded-button bg-teacherAccent px-4 py-2 text-p-sm  text-white font-normal "
+                className="rounded-button bg-teacherAccent px-4 py-2 text-p-sm  text-white font-normal "
               >
                 Alle Fächer
               </button>
@@ -53,16 +55,8 @@ function DashboardTeacher() {
         <div className="col-span-12">
           <div className="w-full bg-teacherSecondary p-4 rounded-main">
             <div className="flex">
-              <img
-                src="/assets/icons/chevron-right.svg"
-                alt="icon"
-                className="w-6 h-6 ml-2"
-              />
-              <img
-                src="/assets/icons/calendar.svg"
-                alt="icon"
-                className="w-6 h-6 ml-4"
-              />
+              <ChevronRightSVG className="w-6 h-6 ml-2" />
+              <CalenderSVG className="w-6 h-6 ml-4" />
               <p className="text-h-md ml-2">Kalender</p>
             </div>
           </div>

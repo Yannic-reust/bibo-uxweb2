@@ -1,9 +1,7 @@
-import { PencilSquareIcon } from "@heroicons/react/24/outline";
-import { FolderIcon } from "@heroicons/react/24/outline";
-import { UserGroupIcon } from "@heroicons/react/24/outline";
-import { PlusCircleIcon } from "@heroicons/react/24/outline";
 import { UserIcon } from "@heroicons/react/24/outline";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
+
+import Class from "../../../assets/images/class.png";
 
 import HomeSVG from "../../../assets/icons/home.svg?react";
 import FileEditSVG from "../../../assets/icons/file-edit.svg?react";
@@ -66,7 +64,10 @@ const SideNav = ({}) => {
     <div className="bg-white shadow-main w-32 h-screen relative">
       <div className="p-2 flex flex-col items ">
         <div className=" p-2 flex justify-center flex-col items-center pb-8">
-          <div className="bg-black/20 rounded-full h-16 w-16" />
+          <div className="h-16 w-16 bg-teacherPrimary rounded-full relative">
+            <img src={Class} className="w-full opacity-80" />
+            <div className="bg-teacherPrimary w-full z-10 aspect-square absolute top-0 left-0 opacity-50 rounded-full" />
+          </div>
           <p className="mt-1 text-black text-p-sm">2024 5A</p>
         </div>
         {navItems.map((item, index) => (

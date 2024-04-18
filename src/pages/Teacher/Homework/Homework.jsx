@@ -1,4 +1,6 @@
 import RegularHomework from "../../../components/Teacher/Homework/RegularHomework";
+import SearchSVG from "../../../assets/icons/search.svg?react";
+
 function Homework() {
   return (
     <>
@@ -29,19 +31,15 @@ function Homework() {
           <div className="flex justify-between mt-8">
             <p className="text-h-lg my-4">Abgeschlossene Hausaufgaben</p>
           </div>
-          <form class="">
-            <div class="relative">
-              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <img
-                  src="/assets/icons/search.svg"
-                  alt="search"
-                  className="w-4 h-4"
-                />
+          <form>
+            <div className="relative">
+              <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <SearchSVG className="w-4 h-4" />
               </div>
               <input
                 type="search"
                 id="default-search"
-                class="block w-1/3 p-1 ps-8 text-sm  border-2 border-black rounded-lg "
+                className="block w-1/3 p-1 ps-8 text-sm  border-2 border-black rounded-lg "
                 placeholder="Suchen"
                 required
               />
