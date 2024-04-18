@@ -1,12 +1,4 @@
-import { UserIcon } from "@heroicons/react/24/outline";
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
-
-import Class from "../../../assets/images/class.png";
-
 import BiboSmallSVG from "../../../assets/images/bibo_small.svg?react";
-import FileEditSVG from "../../../assets/icons/file-edit.svg?react";
-import FolderClosedSVG from "../../../assets/icons/folder-closed.svg?react";
-import Users2SVG from "../../../assets/icons/users-2.svg?react";
 
 const url = window.location.href;
 
@@ -21,15 +13,48 @@ function cutURL(url) {
 
 const currentRoute = cutURL(url);
 
-const NAV_ICON_CLASSES = "size-14  ";
+const routes = [
+  { name: "Home", route: "/student" },
+  { name: "Agenda", route: "/student/agenda" },
+  { name: "Fächer", route: "/student/subjects" },
+];
 
 const SideNav = ({}) => {
   return (
-    <div className="bg-white w-32 h-screen relative">
+    <div className="bg-white w-32 h-screen relative flex flex-col justify-between">
       <div className="flex w-full justify-center mt-8">
         <BiboSmallSVG className="w-16 h-16" />
       </div>
-      <div>nav</div>
+      <div className="space-y-2">
+        {routes.map((item, index) => (
+          <div key={index} className={` w-36 h-20     `}>
+            <a
+              href={item.route}
+              className={`w-full h-full flex items-center p-4 rounded-r-[22px] ${
+                currentRoute == item.route
+                  ? "justify-end w-40 bg-studentPrimary"
+                  : "justify-start w-36 bg-studentSecondary"
+              }`}
+            >
+              <p className="text-white h-fit text-p-sm font-semibold">
+                {item.name}
+              </p>
+            </a>
+          </div>
+        ))}
+      </div>
+      <div>
+        <div
+          className={`bg-studentPrimary w-36 h-20 rounded-r-[22px] flex items-center p-4 ${
+            currentRoute == "/student/absence"
+              ? "justify-end w-40 bg-studentPrimary"
+              : "justify-start w-36 bg-studentSecondary"
+          } `}
+        >
+          <p className="text-white h-fit text-p-sm font-semibold">Absenzen</p>
+        </div>
+      </div>
+      <div></div>
     </div>
   );
 };
