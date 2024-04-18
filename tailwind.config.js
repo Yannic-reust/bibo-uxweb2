@@ -9,9 +9,9 @@ export default {
       teacherTertiary: "#EEF5FF",
       teacherAccent: "#FA7070",
       teacherDarkBlue: "#6787BE",
-      studentPrimary: "#FFC000",
-      studentSecondary: "#FFD966",
-      studentTertiary: "#FFF2CC",
+      studentPrimary: "#3B7BE8",
+      studentSecondary: "#7FA9F0",
+      studentTertiary: "#DCE9FF",
     },
     fontFamily: {
       sonar: ["Euclid Square", "sans-serif"], // main font
