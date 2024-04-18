@@ -53,7 +53,14 @@ function Home() {
                 </div>
               </div>
               <div className="bg-white p-8  rounded-student flex items-center flex-col">
-                <div className="flex">
+                <div className="flex w-full">
+                  <div className="h-1 w-full bg-black dark:bg-neutral-600">
+                    <div className="h-1 bg-white" style={{ width: "45%" }} />
+                    <div
+                      className="w-4 h-4 bg-teacherPrimary rounded-full -mt-2.5"
+                      style={{ marginLeft: "45%" }}
+                    />
+                  </div>
                   <CrownSVG className={`w-14 h-14 mx-2`} />
                 </div>
                 <p>2 / 9 Hausaufgaben sind erledigt!</p>
