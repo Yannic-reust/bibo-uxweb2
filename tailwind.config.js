@@ -73,8 +73,9 @@ export default {
       },
       borderRadius: {
         none: "0",
-        main: "15px",
+        teacher: "15px",
         button: "8px",
+        student: "30px",
       },
     }, // set default font
   },

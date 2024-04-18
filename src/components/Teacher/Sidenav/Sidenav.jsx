@@ -78,7 +78,7 @@ const SideNav = ({}) => {
               item.route === currentRoute
                 ? "bg-teacherPrimary !text-white !stroke-white"
                 : "text-black stroke-black"
-            }  m-1 rounded-main `}
+            }  m-1 rounded-teacher `}
           >
             <div
               className={
@@ -99,11 +99,11 @@ const SideNav = ({}) => {
         ))}
       </div>
       <div className="absolute bottom-20 w-full ">
-        <div className="w-full  rounded-main flex-col items-center flex mt-4">
+        <div className="w-full  rounded-teacher flex-col items-center flex mt-4">
           <EnvelopeIcon className={NAV_ICON_CLASSES} />
           <p className="text-center text-p-sm ">Nachrichten</p>
         </div>
-        <div className="w-full  rounded-main flex-col items-center flex mt-6">
+        <div className="w-full  rounded-teacher flex-col items-center flex mt-6">
           <UserIcon className={NAV_ICON_CLASSES} />
           <p className="text-center  text-p-sm">Account</p>
         </div>

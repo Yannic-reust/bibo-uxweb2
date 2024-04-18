@@ -6,7 +6,7 @@ import CalenderSVG from "../../../assets/icons/calendar.svg?react";
 import ChevronRightSVG from "../../../assets/icons/chevron-right.svg?react";
 
 function DashboardTeacher() {
-  const BOX_CLASSES = "bg-teacherSecondary p-4 rounded-main";
+  const BOX_CLASSES = "bg-teacherSecondary p-4 rounded-teacher";
   return (
     <>
       <div className="grid grid-cols-12 gap-6">
@@ -45,7 +45,7 @@ function DashboardTeacher() {
                 Alle Fächer
               </button>
             </div>
-            <div className=" bg-teacherTertiary p-2 mt-4 rounded-main">
+            <div className=" bg-teacherTertiary p-2 mt-4 rounded-teacher">
               <div className="grid grid-cols-3 ">
                 <Folder name="Mathematik" />
               </div>
@@ -53,7 +53,7 @@ function DashboardTeacher() {
           </div>
         </div>
         <div className="col-span-12">
-          <div className="w-full bg-teacherSecondary p-4 rounded-main">
+          <div className="w-full bg-teacherSecondary p-4 rounded-teacher">
             <div className="flex">
               <ChevronRightSVG className="w-6 h-6 ml-2" />
               <CalenderSVG className="w-6 h-6 ml-4" />

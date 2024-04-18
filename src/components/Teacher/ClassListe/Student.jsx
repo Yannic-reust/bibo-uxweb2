@@ -1,7 +1,7 @@
 function Student() {
   return (
     <>
-      <div className="bg-teacherTertiary w-full rounded-main flex justify-between py-6 px-8">
+      <div className="bg-teacherTertiary w-full rounded-teacher flex justify-between py-6 px-8">
         <div className="">
           <p className="text-h-md">Manni Fred, 11</p>
           <button

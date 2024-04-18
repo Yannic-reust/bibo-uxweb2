@@ -30,7 +30,7 @@ function CreateHomework() {
         </div>
       </div>
 
-      <div className="w-full bg-teacherSecondary mt-2  rounded-main px-6 py-4">
+      <div className="w-full bg-teacherSecondary mt-2  rounded-teacher px-6 py-4">
         <div className={step == 0 ? "block" : "hidden"}>
           <HomeworkStep1 step={step} />
         </div>

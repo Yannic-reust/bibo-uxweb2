@@ -3,7 +3,7 @@ import UserCheck from "../../../assets/icons/user-check.svg?react";
 function CompactHomework() {
   return (
     <>
-      <div className="bg-teacherTertiary p-4 rounded-main ">
+      <div className="bg-teacherTertiary p-4 rounded-teacher ">
         <div className="flex justify-between">
           <div>
             <p className="text-h-sm">Multiplikation Kapitel 4 - Textaufgaben</p>

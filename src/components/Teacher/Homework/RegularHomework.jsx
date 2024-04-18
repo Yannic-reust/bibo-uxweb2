@@ -12,7 +12,7 @@ function RegularHomework() {
 
   return (
     <>
-      <div className="bg-teacherTertiary p-4 rounded-main ">
+      <div className="bg-teacherTertiary p-4 rounded-teacher ">
         <div className="flex">
           <div className="pr-4" onClick={() => toggleOpen(!open)}>
             <ChevronRightSVG className={`w-8 h-8 ${open ? "rotate-90" : ""}`} />

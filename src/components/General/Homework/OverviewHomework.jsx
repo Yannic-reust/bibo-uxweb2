@@ -8,7 +8,7 @@ const OverviewHomework = ({ step, questions }) => {
 
   return (
     <>
-      <div className="pl-4 pr-4 py-2 bg-gray/40 w-full text-black rounded-main">
+      <div className="pl-4 pr-4 py-2 bg-gray/40 w-full text-black rounded-teacher">
         <div className="flex" onClick={() => toggleOpen(!open)}>
           <ChevronRightIcon className={`w-6 mr-2 ${open ? "rotate-90" : ""}`} />
           <PencilSquareIcon className={"w-6 mr-2"} />

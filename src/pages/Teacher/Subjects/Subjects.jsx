@@ -24,8 +24,8 @@ function Subjects() {
             Fach hinzufügen
           </button>
         </div>
-        <div className="w-full  bg-teacherSecondary rounded-main mt-8 p-8">
-          <div className="p-8 rounded-main bg-teacherTertiary grid grid-cols-5">
+        <div className="w-full  bg-teacherSecondary rounded-student mt-8 p-8">
+          <div className="p-8 rounded-teacher bg-teacherTertiary grid grid-cols-5">
             {subjects.map((item, index) => (
               <div className="p-4" key={index}>
                 <Folder name={item} />

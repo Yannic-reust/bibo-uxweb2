@@ -14,7 +14,7 @@ function Homework() {
             Hausaufgabe erstellen
           </button>
         </div>
-        <div className="w-full  bg-teacherSecondary rounded-main mt-8 ">
+        <div className="w-full  bg-teacherSecondary rounded-student mt-8 ">
           <div className="p-8">
             <div className="mt-4">
               <RegularHomework />
@@ -46,7 +46,7 @@ function Homework() {
             </div>
           </form>
 
-          <div className="w-full  bg-teacherSecondary rounded-main mt-4 ">
+          <div className="w-full  bg-teacherSecondary rounded-student mt-4 ">
             <div className="p-8">
               <p className="text-center text-white text-p-lg">
                 Keine abgeschlossene Hausaufgaben

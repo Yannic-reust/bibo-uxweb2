@@ -22,7 +22,7 @@ function ClassList() {
             />
           </div>
         </form>
-        <div className="w-full  bg-teacherSecondary rounded-main mt-8 ">
+        <div className="w-full  bg-teacherSecondary rounded-teacher mt-8 ">
           <div className="p-8">
             <div className="mb-4">
               <Student />
