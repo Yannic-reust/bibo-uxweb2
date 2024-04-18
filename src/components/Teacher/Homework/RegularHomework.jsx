@@ -27,7 +27,7 @@ function RegularHomework() {
               </div>
               <div className="flex">
                 <p className="text-p-sm font-semibold mt-1">24.04.2024</p>
-                <ChevronRightSVG className="w-5 h-5 ml-2" />
+                <CalenderSVG className="w-5 h-5 ml-2" />
               </div>
             </div>
             {open && (
