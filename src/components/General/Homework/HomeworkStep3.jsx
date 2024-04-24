@@ -34,10 +34,4 @@ const HomeworkStep3 = ({ step }) => {
   );
 };
 
-/*ContentAccordion.propTypes = {
-  item: PropTypes.object.isRequired,
-  icon: PropTypes.element,
-  open: PropTypes.bool,
-};*/
-
 export default HomeworkStep3;

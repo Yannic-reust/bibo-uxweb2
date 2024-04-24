@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 function HomeworkDuration({ icon, title, text }) {
   return (
     <>

@@ -1,4 +1,3 @@
-import { CalendarIcon } from "@heroicons/react/24/outline";
 import Folder from "../../../components/Teacher/Subjects/Folder";
 
 function Subjects() {

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Button from "../../General/Button";
-import Dropdown from "../../General/Dropdown";
 import { CameraIcon } from "@heroicons/react/24/outline";
 
 const Question = ({
