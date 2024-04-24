@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 function HomeworkStatusbar({ status, icon, title, text }) {
   return (
     <>

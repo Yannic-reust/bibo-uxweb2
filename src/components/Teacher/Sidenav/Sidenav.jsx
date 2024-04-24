@@ -21,7 +21,7 @@ function cutURL(url) {
 
 const currentRoute = cutURL(url);
 
-const NAV_ICON_CLASSES = "size-14  ";
+const NAV_ICON_CLASSES = "size-14";
 
 const navItems = [
   {
@@ -43,19 +43,6 @@ const navItems = [
     name: "Klassenliste",
     route: "/teacher/classList",
     icon: <Users2SVG className={NAV_ICON_CLASSES} />,
-  },
-];
-
-const bottomNavItems = [
-  {
-    name: "Nachrichten",
-    route: "/teacher/messages",
-    icon: <EnvelopeIcon className={NAV_ICON_CLASSES} />,
-  },
-  {
-    name: "Account",
-    route: "/teacher/account",
-    icon: <UserIcon className={NAV_ICON_CLASSES} />,
   },
 ];
 
@@ -111,11 +98,5 @@ const SideNav = ({}) => {
     </div>
   );
 };
-/*
-ContentAccordion.propTypes = {
-  item: PropTypes.object.isRequired,
-  icon: PropTypes.element,
-  open: PropTypes.bool,
-};*/
 
 export default SideNav;

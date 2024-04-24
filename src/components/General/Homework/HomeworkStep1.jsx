@@ -1,6 +1,4 @@
-// HomeworkStep1.js
 import React, { useState } from "react";
-import Button from "../../General/Button";
 import Dropdown from "../../General/Dropdown";
 import { useDispatch } from "react-redux";
 import { setHomeworkPart1 } from "../../../store/createHomework/createHomeworkState";
