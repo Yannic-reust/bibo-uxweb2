@@ -1,8 +1,29 @@
-# React + Vite
+# Bibo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bibo is a Educational softwar, witch aims to make it easyer for students, teachers and parents to communicate and coordinate. 
 
-Currently, two official plugins are available:
+![student_home](https://github.com/blackbox-mit/bibo-uxweb2/assets/62382435/790af241-5bed-499c-9455-1e163b7df56f)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Home_Teacher](https://github.com/blackbox-mit/bibo-uxweb2/assets/62382435/8d9e2904-ba29-469b-92a4-6826569f9c26)
+
+Bibo originated as a prototype or proof of concept developed in the STUW2 course in the Digital Ideation program at Lucerne University of Applied Sciences.
+
+## Contributing
+The Project was developed by a group of five. 
+
+### Design Team
+
+- Neves Abrantes, Juliana 
+- Martin Kohler, Lea 
+- Ulrich, Fabio 
+- von Burg, Vivien Cecilie
+
+
+### Development Team
+- Reust Yannic
+
+## Frontend 
+Requirements: Node.js 18^ and npm
+
+1. `npm install`
+2. `npm run dev` 
