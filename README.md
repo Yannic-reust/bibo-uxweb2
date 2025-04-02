@@ -1,6 +1,6 @@
 # Bibo
 
-Bibo is a Educational softwar, witch aims to make it easyer for students, teachers and parents to communicate and coordinate. 
+Bibo is an Educational software, which aims to make it easier for students, teachers and parents to communicate and coordinate. 
 
 ![student_home](https://github.com/blackbox-mit/bibo-uxweb2/assets/62382435/790af241-5bed-499c-9455-1e163b7df56f)
 
